@@ -1,0 +1,18 @@
+.form-group,
+.wrapper {
+    padding: 0 10px;
+}
+
+#submit,
+label {
+    margin-top: 10px;
+}
+
+body{
+    background-image: url("/home/chris/bootcamp/UNCHAR201803FSF1-Class-Repository-FSF/07-firebase/01-Activities/Firebase/assets/images/traintrack.jpg");
+}
+
+.jumbotron, .panel{
+    opacity: .7;
+}
+

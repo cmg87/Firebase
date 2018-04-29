@@ -1,0 +1,88 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Train Schedule</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Anytime is Train Time</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Current Train Schedule</h3>
+            </div>
+            <div class="wrapper">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" id="table-train-name">Train Name</th>
+                            <th scope="col" id="table-destination">Destination</th>
+                            <th scope="col" id="table-frequency">Frequency (min)</th>
+                            <th scope="col" id="table-arrival">Next Arrival</th>
+                            <th scope="col" id="table-next">Minutes Away</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="add-employee">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Add Train</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group row">
+                    <div id="name">
+                        <label for="train-name">Train Name</label>
+                        <input class="form-control" id="train-name" type="text">
+                    </div>
+                    <div id="role">
+                        <label for="destination">Destination</label>
+                        <input class="form-control" id="destination" type="text">
+                    </div>
+                    <div id="start">
+                        <label for="first">First Train Time</label>
+                        <input class="form-control" id="first" type="time" placeholder="00:00 AM">
+                    </div>
+                    <div id="monthly">
+                        <label for="frequency">Frequency (min)</label>
+                        <input class="form-control" id="frequency" type="number" min="0" max="60">
+                    </div>
+                    <button class="btn btn-primary" id="submit" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- MomentJS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <!-- Local JavaScript -->
+    <script src="assets/script/app.js"></script>
+</body>
+
+</html>
